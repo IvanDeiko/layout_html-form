@@ -16,22 +16,22 @@
     <legend>Personal information</legend>
     <div class="input">
       <label for="surname">Surname:</label>
-      <input type="text" name="surname" id="surname">
+      <input type="text" name="surname" id="surname" required autofocus autocomplete="off">
     </div>
 
     <div class="input">
       <label for="name">Name:</label>
-      <input type="text" name="name" id="name">
+      <input type="text" name="name" id="name" required autocomplete="off">
     </div>
 
     <div class="input">
       <label for="age">How old are You?</label>
-      <input type="number" name="age" id="age" value="12" data-qa="field-value">
+      <input type="number" name="age" id="age" value="12" min="1" required data-qa="field-value">
     </div>
 
     <div class="input">
       <label for="birthday"> Full date of birthday:</label>
-      <input type="date" name="birthday" id="birthday">
+      <input type="date" name="birthday" id="birthday" required>
     </div>
 
     <div class="input">
@@ -44,12 +44,12 @@
     <legend>Registration</legend>
     <div class="input">
       <label for="email">E-mail:</label>
-      <input type="email" name="email" id="email" data-qa="field-placeholder" placeholder="email@example.com">
+      <input type="email" name="email" id="email" data-qa="field-placeholder" required placeholder="email@example.com">
     </div>
 
     <div class="input">
       <label for="password">Password:</label>
-      <input type="password" name="password" id="password">
+      <input type="password" name="password" required minlength="10" id="password">
     </div>
   </fieldset>
 
@@ -94,7 +94,7 @@
     <legend>Additional info:</legend>
     <div class="input">
       <label for="comments">Comments:</label>
-      <textarea name="comments" id="comments"></textarea>
+      <textarea name="comments" id="comments" maxlength="100"></textarea>
     </div>
 
     <div class="input">
